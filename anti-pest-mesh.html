@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Pest Mesh Installation - KANGAROOF</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #1a5276;
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        nav {
+            transition: max-height 0.3s ease-out;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #f9d423;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        .page-banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/anti-pest mesh installation.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+        
+        .page-banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .content {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+        
+        .content-section {
+            margin-bottom: 3rem;
+        }
+        
+        .content-section h3 {
+            color: #1a5276;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .content-image {
+            width: 100%;
+            height: 300px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: #999;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .anti-pest-content-img {
+            background-image: url('images/anti-pest mesh installation.png');
+        }
+        
+        .cta {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: #f2f2f2;
+        }
+        
+        .cta h2 {
+            margin-bottom: 1.5rem;
+            color: #1a5276;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #1a5276;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #154360;
+        }
+        
+        .btn-secondary {
+            background-color: #f9d423;
+            color: #333;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #f8c400;
+        }
+        
+        footer {
+            background-color: #1a5276;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 1rem;
+                justify-content: center;
+            }
+            
+            nav {
+                width: 100%;
+                max-height: 0;
+                overflow: hidden;
+            }
+            
+            nav.show {
+                max-height: 300px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                margin-top: 1rem;
+            }
+            
+            nav ul li {
+                margin-left: 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+            }
+            
+            .page-banner h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png.png" alt="KANGAROOF Logo">
+                <h1>KANGAROOF</h1>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="roof-cleaning.html">Roof Cleaning</a></li>
+                    <li><a href="solar-panel-cleaning.html">Solar Panel Cleaning</a></li>
+                    <li><a href="anti-pest-mesh.html">Anti-Pest Mesh</a></li>
+                    <li><a href="gutter-guards.html">Gutter Guards</a></li>
+                    <li><a href="contact.html">Get a Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <h2>Anti-Pest Mesh Installation</h2>
+    </section>
+
+    <div class="content">
+        <div class="content-section">
+            <div class="content-image anti-pest-content-img"></div>
+            <p>Protect your home from unwanted pests with our professional anti-pest mesh installation service. Our high-quality mesh creates a physical barrier that prevents birds, possums, rodents, and other pests from nesting in your roof cavity while still allowing proper ventilation.</p>
+        </div>
+        
+        <div class="content-section">
+            <h3>Benefits of Anti-Pest Mesh</h3>
+            <p>Installing anti-pest mesh offers numerous benefits, including preventing damage to your roof structure, insulation, and electrical wiring from pest activity. It also helps reduce health risks associated with pest infestations and eliminates the need for toxic pest control chemicals. In Queensland's climate, it's an essential protection for your home.</p>
+        </div>
+        
+        <div class="content-section">
+            <h3>Our Installation Process</h3>
+            <p>Our experienced team will carefully assess your roof to determine the best approach for installation. We use high-grade stainless steel or aluminum mesh that's built to withstand Queensland's harsh climate. The mesh is securely fitted to prevent any gaps where pests might enter, while ensuring proper airflow and ventilation for your roof cavity.</p>
+        </div>
+    </div>
+
+    <section class="cta" id="contact">
+        <h2>Ready to pest-proof your roof?</h2>
+        <div class="cta-buttons">
+            <a href="tel:+61450405935" class="btn">Call 0450 405 935</a>
+            <a href="mailto:kangaroofcleaning@gmail.com" class="btn btn-secondary">kangaroofcleaning@gmail.com</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 KANGAROOF. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('show');
+        });
+    </script>
+</body>
+</html> 
